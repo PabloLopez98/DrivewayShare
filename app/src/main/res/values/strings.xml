@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DrivewayShare</string>
+    <string name="title_activity_user_map">Map</string>
+    <string name="map">Map</string>
+    <string name="mypost">MyPost</string>
+    <string name="messsages">Messsages</string>
+    <string name="request">Request</string>
+    <string name="Open">DrivewaShare</string>
+    <string name="Close">DrivewayShare</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button">Button</string>
+    <string name="conversation_fragment">Conversation Fragment</string>
+</resources>

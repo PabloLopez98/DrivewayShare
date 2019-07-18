@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hideKeyBoard"
+    tools:context=".LoginSignUp">
+
+    <ImageView
+        android:id="@+id/bluebackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="430dp"
+        android:adjustViewBounds="true"
+        android:onClick="hideKeyBoard"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="hideKeyBoard"
+        android:text="DrivewayShare"
+        android:textColor="@android:color/background_light"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/bluebackground"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluebackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/whitesquare"
+        android:layout_width="wrap_content"
+        android:layout_height="754dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="32dp"
+        android:onClick="hideKeyBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bigwhitesquare" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="103dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:onClick="toCreateAccount"
+        android:text="Sign Up"
+        android:textColor="#1F9EFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whitesquare"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toEndOf="@+id/whitesquare"
+        app:layout_constraintTop_toBottomOf="@+id/needaccounttext" />
+
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="419dp"
+        android:onClick="hideKeyBoard"
+        android:text="Login"
+        android:textColor="#29406c"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bluebackground"
+        app:layout_constraintStart_toEndOf="@+id/bluebackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/emailrectangle"
+        android:layout_width="297dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginBottom="327dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whitesquare"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/whitesquare"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle"
+        android:layout_width="297dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginBottom="247dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whitesquare"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/whitesquare"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginBottom="349dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#aab0be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/emailrectangle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/emailrectangle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginBottom="265dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#aab0be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordrectangle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/passwordrectangle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/needaccounttext"
+        android:layout_width="166dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whitesquare"
+        app:layout_constraintStart_toEndOf="@+id/whitesquare"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:srcCompat="@drawable/donthaveaccounttext" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="182dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="187dp"
+        android:background="@drawable/login"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:onClick="Login"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whitesquare"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/whitesquare"
+        app:layout_constraintTop_toBottomOf="@+id/passwordrectangle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

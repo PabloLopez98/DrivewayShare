@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/theBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="50dp"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_pressed"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner_services"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="108dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingLeft="0dp"
+            app:layout_constraintStart_toEndOf="@+id/textViewPrice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/money2"
+            android:layout_width="15dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginBottom="8dp"
+            android:text="$"
+            android:textColor="#29406c"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="44dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="320dp"
+            android:background="@drawable/reserveblueicon"
+            android:text="Client"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="100dp"
+            android:text="40"
+            android:textColor="#29406c"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="170dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="76dp"
+            android:text="12pm - 1pm"
+            android:textColor="#29406c"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="69dp"
+            android:text="11223 Laurel Ave, Whittier, CA"
+            android:textColor="#29406c"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageChatView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="232dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="134dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="16dp"
+            android:text="Pablo Lopez"
+            android:textColor="#29406c"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/locationicon" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/timeicon" />
+
+        <Button
+            android:id="@+id/pendingButton"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="244dp"
+            android:background="@drawable/reserveblueicon"
+            android:text="Pending"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/cancelcircle"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

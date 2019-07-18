@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterSearch">
+
+    <ImageView
+        android:id="@+id/backtomapfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:onClick="hideKeyBoardAgainfifth"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupbackground" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="592dp"
+        android:layout_marginTop="123dp"
+        android:onClick="hideKeyBoardAgainfifth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tallrectangle" />
+
+    <TextView
+        android:id="@+id/filtersearchtextview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="410dp"
+        android:onClick="hideKeyBoardAgainfifth"
+        android:text="Start before:"
+        android:textColor="#29406c"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filtersearchtextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:onClick="hideKeyBoardAgainfifth"
+        android:text="Less than $"
+        android:textColor="#29406c"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="384dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/timefilterinput"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="392dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="12:00PM"
+        android:inputType="text"
+        android:textColorHint="#aab0be"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/pricefilterinput"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="280dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="40"
+        android:inputType="text"
+        android:textColorHint="#aab0be"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/filterConfirmButton"
+        android:layout_width="182dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/login_button"
+        android:text="Confirm"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filtersearchtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:onClick="hideKeyBoardAgainfifth"
+        android:text="Filter"
+        android:textColor="#29406c"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/backtomapfragment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backtomapfragment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/backToMap"
+        android:layout_width="54dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

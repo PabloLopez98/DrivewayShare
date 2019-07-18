@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <ImageView
+        android:id="@+id/backtomapfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="505dp"
+        android:adjustViewBounds="true"
+        android:onClick="hideKeyBoardAgain"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupbackground" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:onClick="hideKeyBoardAgain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tallrectangle" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle5"
+        android:layout_width="297dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/confirmpasswordinput"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginBottom="209dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="#aab0be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordrectangle2"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toEndOf="@+id/passwordrectangle2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle4"
+        android:layout_width="297dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginBottom="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/passwordinput"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginBottom="285dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#aab0be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordrectangle2"
+        app:layout_constraintStart_toEndOf="@+id/passwordrectangle2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle3"
+        android:layout_width="297dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="347dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/emailinput"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginBottom="365dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#aab0be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordrectangle2"
+        app:layout_constraintStart_toEndOf="@+id/passwordrectangle2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/passwordrectangle2"
+        android:layout_width="297dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginBottom="425dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangefortext" />
+
+    <EditText
+        android:id="@+id/usernameinput"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginBottom="444dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#aab0be"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/passwordrectangle2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/passwordrectangle2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="182dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/login"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:onClick="SignUp"
+        android:text="Create Account"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordrectangle5" />
+
+    <TextView
+        android:id="@+id/logintext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:layout_marginBottom="517dp"
+        android:onClick="hideKeyBoardAgain"
+        android:text="Create Account"
+        android:textColor="#29406c"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/backtomapfragment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backtomapfragment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backarrow"
+        android:layout_width="54dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/backarrow"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

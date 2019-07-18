@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/map"
+        android:title="Map"
+        android:icon="@drawable/locationicon"
+        />
+
+    <item
+        android:id="@+id/mypost"
+        android:title="MyPost"
+        android:icon="@drawable/myposticon"
+        />
+
+    <item
+        android:id="@+id/reservations"
+        android:title="Reservations"
+        android:icon="@drawable/requesticon"
+        />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/messagesicon"
+        android:title="Chat" />
+
+</menu>
